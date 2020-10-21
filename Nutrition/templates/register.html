@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Sign Up</title>
+	<style>
+		#edit_area {
+			width: 25%;
+			margin: 0 auto;
+			margin-top: 10%; 
+		}
+		input {
+			display: block;
+			width: 100%;
+		}
+		#submit, #login{
+			width: 70px;
+			display: inline-block;
+		}
+		#login_aria {
+			width: 25%;
+			margin: 0 auto;
+		}
+		#login{
+			float: right;
+			margin-top: -37px; 
+		}
+	</style>
+</head>
+<body>
+	<form id="edit_area" action="{% url 'register' %}" method="POST">{% csrf_token %}
+		<h2>Register</h2>
+		<p>Username</p>
+		<input name="username" type="text" placeholder="Username"/>
+		<p>Password</p>
+		<input name="password" type="password" placeholder="Password"/>
+		<p>Confirm Password</p>
+		<input name="check_password" type="password" placeholder="Confirm Password"/><br>
+		<input id="submit" type="submit" value="Sign up"/>
+		<p>{{error}}</p>
+	</form>
+	<form id="login_aria" action="{% url 'tologin' %}">
+		<input id="login" type="submit" value="Log in"/>
+	</form>
+</body>
+</html>

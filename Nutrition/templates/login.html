@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style>
+		#login_area {
+			width: 25%;
+			margin: 0 auto;
+			margin-top: 100px; 
+			padding: 2%;
+			border: 1px solid #cccccc;
+			border-radius: 8px;
+		}
+		input {
+			display: block;
+			width: 100%;
+		}
+		#submit{
+			width: 70px;
+			display: inline-block;
+		}
+	</style>
+</head>
+<body>
+	{% if not user.is_authenticated %}
+	<form id="login_area" action="{% url 'login' %}" method="POST">{% csrf_token %}
+		<h2>Log in</h2>
+		<p>Username</p>
+		<input name="username" type="text" placeholder="Username"/>
+		<p>Password</p> 
+		<input name="password" type="password" placeholder="Password"/><br>
+		<input id="submit" type="submit" value="Log in"/><br>
+		<p>{{error}}</p>
+	</form>
+	{% else %}
+	<a href="{% url 'logoutuser' %}">Log out </a>
+	{% endif %}
+</body>
+</html>
