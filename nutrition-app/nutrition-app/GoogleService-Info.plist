@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>759724431143-m582auvdp65ku6047d3lhadn3e1oc6n5.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.759724431143-m582auvdp65ku6047d3lhadn3e1oc6n5</string>
+	<key>API_KEY</key>
+	<string>AIzaSyDnBjf1Y11yhLnWH0ofMwdjBD1N6r4XQzk</string>
+	<key>GCM_SENDER_ID</key>
+	<string>759724431143</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.marquette.nutrition-app</string>
+	<key>PROJECT_ID</key>
+	<string>nutrition-app-c4527</string>
+	<key>STORAGE_BUCKET</key>
+	<string>nutrition-app-c4527.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:759724431143:ios:f9fcf17cc1d2936ad67b02</string>
+	<key>DATABASE_URL</key>
+	<string>https://nutrition-app-c4527.firebaseio.com</string>
+</dict>
+</plist>
