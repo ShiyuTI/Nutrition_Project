@@ -48,16 +48,20 @@ class AddChildViewController: UIViewController, UITextFieldDelegate {
         super.viewDidLoad()
                 
         addDatePicker(counter: 0, textfield: timeTextField)
+        
         let setAge = ["less than 18", "18-25", "18-29", "30-39", "40-49","50-59","60-69", "70+"]
         setDropdown(array: setAge, dropdown1: yourAge)
+        
         firstName.delegate = self
         lastName.delegate = self
         emailAddress.delegate = self
         mobileNumber.delegate = self
         mobileNumber.setNumberKeyboardReturn()
         yourAge.delegate = self
+        
         let relation = ["Mother", "Father", "Grandparent", "Other"]
         setDropdown(array: relation, dropdown1: yourRelation)
+        
         childName.delegate = self
         addDatePicker(counter: 1, textfield: childBirthday)
         let genders = ["Male", "Female"]
