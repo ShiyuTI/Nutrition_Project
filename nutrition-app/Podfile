@@ -7,7 +7,10 @@ target 'nutrition-app' do
   # Pods for nutrition-app
   pod 'Firebase/Auth'
   pod 'Firebase/Firestore'
-
+  pod 'TextFieldEffects'
+  pod 'iOSDropDown'
+  pod 'CheckBox'
+  
   target 'nutrition-appTests' do
     inherit! :search_paths
     # Pods for testing

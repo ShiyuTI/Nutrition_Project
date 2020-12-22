@@ -29,7 +29,7 @@ class LoginViewController: UIViewController {
         }
     }
     @IBAction func loginBtn(_ sender: Any) {
-        self.performSegue(withIdentifier: "toquestion", sender: self)
+        self.performSegue(withIdentifier: "tomain", sender: self)
 //        if let email = emailText.text, let password = passwordText.text {
 //            Auth.auth().signIn(withEmail: email, password: password) { authResult, error in
 //                if let e = error {
